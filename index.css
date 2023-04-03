@@ -1,127 +1,164 @@
-
 :root {
-    /* BRAND COLOR */
-     --rc-color-brand: #353535;
- 
-   /* COLOR PALETTE */
-   --rc-color-n-000: #7c0326e5;
-   --rc-color-n-050: #f5f5f5;
-   --rc-color-n-100: #ebebeb;
-   --rc-color-n-300: #aeaeae;
-   --rc-color-n-500: #353535;
-   --rc-color-n-700: #282828;
-   --rc-color-n-900: #1a1a1a;
- 
-   /* BACKGROUND COLOR */
-   --rc-color-background-primary  : var(--rc-color-n-000);
-   --rc-color-background-secondary: var(--rc-color-n-050);
-   --rc-color-background-tertiary : var(--rc-color-n-100);
- 
-   /* BORDER COLOR */
-   --rc-color-border: var(--rc-color-n-100);
- 
-   /* TYPOGRAPHY COLOR */
-   --rc-color-typography-heading: var(--rc-color-n-500);
-   --rc-color-typography-body   : var(--rc-color-n-900);
-   --rc-color-typography-note   : var(--rc-color-n-300);
-   --rc-color-typography-button : var(--rc-color-n-000);
- 
-   /* TYPOGRAPHY TYPE */
-   --rc-typography-typeface: "Roboto", sans-serif;
- 
-   /* FONT SIZE */
-   --rc-typography-h1: 1.9375rem;
-   --rc-typography-h2: 1.5625rem;
-   --rc-typography-h3: 1.25rem;
-   --rc-typography-p : 1rem;
-   --rc-typography-s : .8125rem;
- 
-   /* LEADING */
-   --rc-typography-h1-leading: 1.2;
-   --rc-typography-h2-leading: 1.2;
-   --rc-typography-p-leading : 1.5;
- 
-   /* MARGIN */
-   --rc-typography-margin-heading: .75rem;
-   --rc-typography-margin-body   : 1.125rem;
- 
-   /* MARGIN LAYOUT*/
-   --rc-layout-container: 1.25rem;
-   --rc-layout-grid     : 3.625rem;
-   --rc-layout-gutter   : 1rem;
- 
-   /* GAP */
-   --rc-gap-header     : 1rem;
-   --rc-gap-cta        : .75rem;
-   --rc-gap-hero       : 2rem;
-   --rc-gap-customer   : 2rem;
-   --rc-gap-feature    : 2rem;
-   --rc-gap-card       : 1.25rem;
-   --rc-gap-pricing    : 2rem;
-   --rc-gap-testimonial: 3rem;
- 
-   /* BORDER RADIUS */
-   --rc-radius-avatar: 5rem;
-   --rc-radius-button: 5rem;
-   --rc-radius-card  : .5rem;
- 
- }
- 
- /* FOUNDATIONS */
- html { box-sizing: border-box; }
- 
- *,
- *:before,
- *:after { box-sizing: inherit; }
- 
- body {
-   background-color: var(--rc-color-background-primary);
-   color: var(--rc-color-typography-body);
-   font-family: var(--rc-typography-typeface);
-   font-size: var(--rc-typography-p);
-   font-weight: 400;
-   line-height: var(--rc-typography-p-leading);
-   margin: 0 auto;
-   text-rendering: optimizeLegibility;
-   -webkit-font-smoothing: antialiased;
- }
- 
- /* TYPOGRAPHY */
- a {
-   color: var(--rc-color-brand);
-   text-decoration-color: var(--rc-color-typography-note);
- }
- 
- h1,
- h2,
- p,
- ul { margin-top: 0; }
- 
- h1,
- h2 {
-   color: var(--rc-color-typography-heading);
-   margin-bottom: var(--rc-typography-margin-heading);
- }
- 
- h1 {
-   font-size: var(--rc-typography-h1);
-   line-height: var(--rc-typography-h1-leading);
- }
- 
- h2 {
-   font-size: var(--rc-typography-h2);
-   line-height: var(--rc-typography-h2-leading);
- }
- 
- p,
- ul { margin-bottom: var(--rc-typography-margin-body); }
- 
- p:last-child,
- ul:last-child { margin-bottom: 0; }
- 
- ul { padding-left: 0; }
- 
- strong { font-weight: 700; }
+  /* BRAND COLOR */
+  --rc-color-brand: #353535;
+
+  /* COLOR PALETTE */
+  --rc-color-n-000: #e6b89c;
+  --rc-color-n-050: #572364;
+  --rc-color-n-100: #efb810;
+  --rc-color-n-300: #aeaeae;
+  --rc-color-n-500: #7c0326e5;
+  --rc-color-n-700: #2c0fc0cb;
+  --rc-color-n-900: #1a1a1a;
+
+  /* BACKGROUND COLOR */
+  --rc-color-background-primary: var(--rc-color-n-000);
+  --rc-color-background-secondary: var(--rc-color-n-050);
+  --rc-color-background-tertiary: var(--rc-color-n-100);
+
+  /* BORDER COLOR */
+  --rc-color-border: var(--rc-color-n-100);
+
+  /* TYPOGRAPHY COLOR */
+  --rc-color-typography-heading: var(--rc-color-n-500);
+  --rc-color-typography-body: var(--rc-color-n-900);
+  --rc-color-typography-note: var(--rc-color-n-300);
+  --rc-color-typography-button: var(--rc-color-n-000);
+  --rc-color-typography-h1: var(--rc-color-n-900);
+  --rc-color-typography-h2: var(--rc-color-n-900);
+  --rc-color-typography-h3: var(--rc-color-n-000);
+  --rc-color-typography-h4: var(--rc-color-n-000);
+
+  /* TYPOGRAPHY TYPE */
+  --rc-typography-typeface: 'Roboto', sans-serif;
+
+  /* FONT SIZE */
+  --rc-typography-h1: 1.9375rem;
+  --rc-typography-h2: 1.5625rem;
+  --rc-typography-h3: 1.25rem;
+  --rc-typography-h4: 1rem;
+  --rc-typography-p: 1rem;
+  --rc-typography-s: 0.8125rem;
+
+  /* LEADING */
+  --rc-typography-h1-leading: 1.2;
+  --rc-typography-h2-leading: 1.2;
+  --rc-typography-p-leading: 1.5;
+
+  /* MARGIN */
+  --rc-typography-margin-heading: 0.75rem;
+  --rc-typography-margin-body: 1.125rem;
+
+  /* MARGIN LAYOUT*/
+  --rc-layout-container: 1.25rem;
+  --rc-layout-grid: 3.625rem;
+  --rc-layout-gutter: 1rem;
+
+  /* GAP */
+  --rc-gap-header: 1rem;
+  --rc-gap-cta: 0.75rem;
+  --rc-gap-hero: 2rem;
+  --rc-gap-customer: 2rem;
+  --rc-gap-feature: 2rem;
+  --rc-gap-card: 1.25rem;
+  --rc-gap-pricing: 2rem;
+  --rc-gap-testimonial: 3rem;
+
+  /* BORDER RADIUS */
+  --rc-radius-avatar: 5rem;
+  --rc-radius-button: 5rem;
+  --rc-radius-card: 0.5rem;
+}
+
+/* FOUNDATIONS */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--rc-color-background-primary);
+  color: var(--rc-color-typography-body);
+  font-family: var(--rc-typography-typeface);
+  font-size: var(--rc-typography-p);
+  font-weight: 400;
+  line-height: var(--rc-typography-p-leading);
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* TYPOGRAPHY */
+a {
+  color: var(--rc-color-brand);
+  text-decoration-color: var(--rc-color-typography-note);
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  color: var(--rc-color-typography-heading);
+  margin-bottom: var(--rc-typography-margin-heading);
+  color: var(--rc-color-n-900);
+}
+
+h1 {
+  font-size: var(--rc-typography-h1);
+  line-height: var(--rc-typography-h1-leading);
+}
+
+h2 {
+  font-size: var(--rc-typography-h2);
+  line-height: var(--rc-typography-h2-leading);
+  text-align: center;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  /* border: 2px solid white; */
+}
+
+h3,
+h4 {
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+p,
+ul {
+  margin-bottom: var(--rc-typography-margin-body);
+}
+
+p:last-child,
+ul:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  list-style: none;
+  text-decoration: underline;
+  justify-content: space-between;
+  border: 2px solid white;
+}
+
+/* strong { font-weight: 700; }
  
  small { font-size: var(--rc-typography-s); }
  
@@ -129,18 +166,18 @@
    color: var(--rc-color-typography-note);
    line-height: 1;
  }
- 
- /* IMAGE */
- img,
- svg {
-   display: block;
-   height: auto;
-   margin: 0 auto;
-   max-width: 100%;
- }
- 
- /* LAYOUT */
- .rc-layout-container {
+  */
+/* IMAGE */
+img,
+svg {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* LAYOUT */
+/* .rc-layout-container {
    padding-left: var(--rc-layout-container);
    padding-right: var(--rc-layout-container);
  }
@@ -153,197 +190,200 @@
  
  .rc-layout-flex { display: flex; }
  
- .rc-layout-grid { display: grid; }
- 
- /* COMPONENTS */
- .info-general {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(
-      rgba(27, 27, 243, 0.5),
-      rgba(248, 247, 246, 0.5)
-    );
+ .rc-layout-grid { display: grid; } */
+
+/* COMPONENTS */
+.info-general {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  background-color: var(--rc-color-n-000);
+}
+
+.info-dias {
+  display: flex;
+  
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--rc-color-background-primary);
+}
+.info-historia {
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* .volver-arriba {
+  display: flex;
+  position:fixed;
+  z-index: 2;
+} */
+
+/* TODO: CREATE YOUR COMPONENTS - ELEMENTS */
+.block {
+  background-color: var(--rc-color-background-primary);
+  display: flex;
+  margin-bottom: 24px;
+  border: 2px solid white;
+  text-align: justify;
+  padding: 2rem;
+}
+
+.info-historia {
+  padding-top: 2rem;
+}
+
+.block > img {
+  max-width: 600px;
+}
+/* SECTIONS */
+
+/* TODO: WORK IN YOUR SECTIONS - SECTIONS */
+
+/* MEDIAS */
+
+@media screen and (min-width: 23.43rem) {
+  /*VARIABLE*/
+  section {
+    font-size: medium;
+    padding: 2rem;
+  }
+  h1,
+  h2 {
+    font-size: medium;
+  }
+
+  .info-historia {
+    border: 1px solid white;
   }
 
   .info-dias {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 1rem;
+    text-align: center;
     align-items: center;
-    background-image: linear-gradient(
-      rgba(248, 247, 246, 0.947),
-      rgba(24, 24, 24, 0.05)
-    );
-  }
-  .footer-rrss {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(
-      rgba(27, 27, 243, 0.5),
-      rgba(248, 247, 246, 0.5)
-    );
-    font-size: 16px;
-  }
- /* TODO: CREATE YOUR COMPONENTS - ELEMENTS */
- .block {
-    background-color: white;
-    /*   Añadimos flex a cada bloque en escritorio y un margin bottom para que se separen y verlos espaciados */
-    display: flex;
-    margin-bottom: 24px;
+    margin: 1rem;
+    gap: 2rem;
+    background-color: var(--rc-color-background-primary);
   }
   
-  /* Los blocks que sea pares (2, 4, 6...) tendrán una dirección distinta para dar dinamismo a la web */
-  /* .block:nth-child(odd) {
-    flex-direction: row-reverse;
-  } */
-  
-  .block > img {
-    max-width: 600px;
+  img {
+    max-width: 80%;
   }
- /* SECTIONS */
- /* TODO: WORK IN YOUR SECTIONS - SECTIONS */
- 
- 
- /* MEDIAS */
- @media screen and (min-width: 48rem) {
-   /*VARIABLES*/
-   :root {
- 
-     /*TYPOGRAPHY FONT SIZE */
-     --rc-typography-h1: 2.1875rem;
-     --rc-typography-h2: 1.75rem;
-     --rc-typography-p : 1.125rem;
-     --rc-typography-s : .875rem;
- 
-     /* MARGIN */
-     --rc-typography-margin-body: 1.25rem;
- 
-     /*LAYOUT*/
-     --rc-layout-container: 4.25rem;
-     --rc-layout-gutter   : 1.5rem;
- 
-     /* GAP */
-     --rc-gap-header: 1.5rem;
-     --rc-gap-card  : 1.5rem;
- 
-   }
- 
-   /*IMAGE*/
-   .rc-image-half-left {
-     padding-right: var(--rc-layout-gutter);
-   }
- 
-   .rc-image-half-right {
-     padding-left: var(--rc-layout-gutter);
-   }
- 
-   /* LAYOUT*/
-   .rc-layout-container,
-   .rc-layout-column-center {
-     margin-left: auto;
-     margin-right: auto;
-   }
- 
-   .rc-layout-grid-2,
-   .rc-layout-grid-3 {
-     column-gap: var(--rc-layout-gutter);
-     grid-template-columns: repeat(2, 1fr);
-     justify-items: center;
-   }
- 
-   .rc-layout-grid-3 div:nth-of-type(3) {
-     left: calc(50% + (var(--rc-layout-gutter) / 2));
-     position: relative;
-   }
- 
-   .rc-layout-column-4 {
-     width: calc((var(--rc-layout-grid) * 4) +
-            (var(--rc-layout-gutter) * 3));
-   }
- 
-   /*------------------------------------------------------------
+  /*------------------------------------------------------------
+     SECTION
+     ------------------------------------------------------------*/
+}
+/* modelo ipad terminado no tocar mas */
+@media screen and (min-width: 48rem) {
+  /*VARIABLES*/
+  :root {
+    /*TYPOGRAPHY FONT SIZE */
+    --rc-typography-h1: 2.1875rem;
+    --rc-typography-h2: 1.75rem;
+    --rc-typography-p: 1.125rem;
+    --rc-typography-s: 0.875rem;
+
+    /* MARGIN */
+    --rc-typography-margin-body: 1.25rem;
+
+    /* GAP */
+    --rc-gap-header: 1.5rem;
+  }
+  h2 {
+    font-size: var(--rc-typography-h2);
+  }
+  /*IMAGE*/
+
+  /*------------------------------------------------------------
    COMPONENT
    ------------------------------------------------------------*/
- 
-   /*------------------------------------------------------------
+  .info-historia {
+    border: 1px solid white;
+  }
+
+  .info-dias {
+    font-size:var(--rc-color-typography-note);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin: 2.5rem;
+    padding: 1rem;
+    background-color: var(--rc-color-background-primary);
+  }
+  
+  
+
+  /*------------------------------------------------------------
    SECTION
    ------------------------------------------------------------*/
-   
- }
- 
- @media screen and (min-width: 64rem) {
-   /*VARIABLE*/
-   :root {
-     /*LAYOUT*/
-     --rc-layout-container: 0;
-   }
- 
-   /*LAYOUT*/
-   .rc-layout-container { width: 60rem; }
- 
-   .rc-layout-grid-3 { grid-template-columns: repeat(3, 1fr); }
- 
-   .rc-layout-grid-3 div:nth-of-type(3) { position: static; }
- 
-   /*------------------------------------------------------------
-   SECTION
-   ------------------------------------------------------------*/
- 
- 
- }
- 
- @media screen and (min-width: 75rem) {
-   /*VARIABLE*/
-   :root {
-     /*TYPOGRAPHY*/
- 
-     /* FONT SIZE */
-     --rc-typography-h1: 2.75rem;
-     --rc-typography-h2: 2.1875rem;
-     --rc-typography-h4: 1.4375rem;
- 
-     /* MARGIN */
-     --rc-typography-margin-heading: 1rem;
-     --rc-typography-margin-body   : 1.75rem;
- 
-     /*LAYOUT*/
-     --rc-layout-grid  : 4rem;
-     --rc-layout-gutter: 2rem;
- 
-     /* GAP */
-     --rc-gap-header  : 2rem;
-     --rc-gap-customer: 4rem;
-     --rc-gap-card    : 2rem;
-     --rc-gap-pricing : 3rem;
-     
-   }
- 
-   /*TYPOGRAPHY*/
-   .rc-text-intro { font-size: var(--rc-typography-h4); }
- 
-   /*LAYOUT*/
-   .rc-layout-container { width: 70rem; }
- 
-   /*COMPONENT*/
-   .block {
-    display: block;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.block > img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  /* padding: 2rem; */
+}
+
+@media screen and (min-width: 75rem) {
+  /*VARIABLE*/
+  :root {
+    /*TYPOGRAPHY*/
+
+    /* FONT SIZE */
+    --rc-typography-h1: 2.75rem;
+    --rc-typography-h2: 2.1875rem;
+    --rc-typography-h4: 1.4375rem;
+
+    /* MARGIN */
+    --rc-typography-margin-heading: 1rem;
+    --rc-typography-margin-body: 1.75rem;
+
+    /*LAYOUT*/
+    --rc-layout-grid: 4rem;
+    --rc-layout-gutter: 2rem;
+
+    /* GAP */
+    --rc-gap-header: 2rem;
+    --rc-gap-customer: 4rem;
+    --rc-gap-card: 2rem;
+    --rc-gap-pricing: 3rem;
+  }
+
+  /*TYPOGRAPHY*/
+  .rc-text-intro {
+    font-size: var(--rc-typography-h4);
+  }
+
+  /*LAYOUT*/
+  .rc-layout-container {
+    width: 70rem;
+  }
+
+  /*COMPONENT*/
+  .block {
+    display: flex;
+    flex-direction: row;
     margin-bottom: 0;
   }
 
   .block > img {
     display: block;
-    width: 100%;
+    width: 40%;
     margin: 0 auto;
   }
-   /*SECTION*/
- 
- 
- }
-
-
-
+  /*SECTION*/
+}
