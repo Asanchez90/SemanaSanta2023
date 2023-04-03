@@ -1,6 +1,6 @@
 :root {
   /* BRAND COLOR */
-  --rc-color-brand: #353535;
+  --rc-color-brand: #010101;
 
   /* COLOR PALETTE */
   --rc-color-n-000: #e6b89c;
@@ -16,8 +16,7 @@
   --rc-color-background-secondary: var(--rc-color-n-050);
   --rc-color-background-tertiary: var(--rc-color-n-100);
 
-  /* BORDER COLOR */
-  --rc-color-border: var(--rc-color-n-100);
+
 
   /* TYPOGRAPHY COLOR */
   --rc-color-typography-heading: var(--rc-color-n-500);
@@ -30,7 +29,7 @@
   --rc-color-typography-h4: var(--rc-color-n-000);
 
   /* TYPOGRAPHY TYPE */
-  --rc-typography-typeface: 'Roboto', sans-serif;
+  
 
   /* FONT SIZE */
   --rc-typography-h1: 1.9375rem;
@@ -40,37 +39,19 @@
   --rc-typography-p: 1rem;
   --rc-typography-s: 0.8125rem;
 
-  /* LEADING */
-  --rc-typography-h1-leading: 1.2;
-  --rc-typography-h2-leading: 1.2;
-  --rc-typography-p-leading: 1.5;
+
 
   /* MARGIN */
   --rc-typography-margin-heading: 0.75rem;
   --rc-typography-margin-body: 1.125rem;
 
-  /* MARGIN LAYOUT*/
-  --rc-layout-container: 1.25rem;
-  --rc-layout-grid: 3.625rem;
-  --rc-layout-gutter: 1rem;
-
-  /* GAP */
-  --rc-gap-header: 1rem;
-  --rc-gap-cta: 0.75rem;
-  --rc-gap-hero: 2rem;
-  --rc-gap-customer: 2rem;
-  --rc-gap-feature: 2rem;
-  --rc-gap-card: 1.25rem;
-  --rc-gap-pricing: 2rem;
-  --rc-gap-testimonial: 3rem;
+  
 
   /* BORDER RADIUS */
-  --rc-radius-avatar: 5rem;
-  --rc-radius-button: 5rem;
   --rc-radius-card: 0.5rem;
 }
 
-/* FOUNDATIONS */
+/* principal */
 html {
   box-sizing: border-box;
 }
@@ -93,7 +74,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* TYPOGRAPHY */
+/* tipografia */
 a {
   color: var(--rc-color-brand);
   text-decoration-color: var(--rc-color-typography-note);
@@ -158,41 +139,19 @@ ul {
   border: 2px solid white;
 }
 
-/* strong { font-weight: 700; }
- 
- small { font-size: var(--rc-typography-s); }
- 
- .rc-text-note {
-   color: var(--rc-color-typography-note);
-   line-height: 1;
- }
-  */
-/* IMAGE */
+/* imagen */
 img,
 svg {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--rc-gap-card);
   height: auto;
   margin: 0 auto;
   max-width: 100%;
 }
 
-/* LAYOUT */
-/* .rc-layout-container {
-   padding-left: var(--rc-layout-container);
-   padding-right: var(--rc-layout-container);
- }
- 
- .rc-layout-flex,
- .rc-layout-grid {
-   align-items: center;
-   justify-content: center;
- }
- 
- .rc-layout-flex { display: flex; }
- 
- .rc-layout-grid { display: grid; } */
-
-/* COMPONENTS */
+/* componentes */
 .info-general {
   display: flex;
   flex-direction: row;
@@ -204,7 +163,6 @@ svg {
 
 .info-dias {
   display: flex;
-  
   justify-content: space-around;
   align-items: center;
   margin: 0;
@@ -215,131 +173,73 @@ svg {
   text-align: justify;
   margin: 10px;
   padding: 10px;
-}
-
-/* .volver-arriba {
-  display: flex;
-  position:fixed;
-  z-index: 2;
-} */
-
-/* TODO: CREATE YOUR COMPONENTS - ELEMENTS */
-.block {
-  background-color: var(--rc-color-background-primary);
-  display: flex;
-  margin-bottom: 24px;
   border: 2px solid white;
-  text-align: justify;
-  padding: 2rem;
 }
 
-.info-historia {
-  padding-top: 2rem;
-}
-
-.block > img {
-  max-width: 600px;
-}
-/* SECTIONS */
-
-/* TODO: WORK IN YOUR SECTIONS - SECTIONS */
-
-/* MEDIAS */
-
+/* dispositivos */
+/* moviles */
 @media screen and (min-width: 23.43rem) {
-  /*VARIABLE*/
+
   section {
     font-size: medium;
-    padding: 2rem;
+    /* padding: 2rem; */
   }
   h1,
   h2 {
     font-size: medium;
   }
 
-  .info-historia {
-    border: 1px solid white;
-  }
-
   .info-dias {
     display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+    column-gap: 16px;
+    justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    margin: 1rem;
-    gap: 2rem;
-    background-color: var(--rc-color-background-primary);
+    margin: 0.6rem;
+    padding: 1rem;
   }
   
   img {
     max-width: 80%;
   }
-  /*------------------------------------------------------------
-     SECTION
-     ------------------------------------------------------------*/
 }
-/* modelo ipad terminado no tocar mas */
+
+/* Dispositivo tablet */
 @media screen and (min-width: 48rem) {
-  /*VARIABLES*/
+ 
   :root {
     /*TYPOGRAPHY FONT SIZE */
     --rc-typography-h1: 2.1875rem;
     --rc-typography-h2: 1.75rem;
     --rc-typography-p: 1.125rem;
     --rc-typography-s: 0.875rem;
-
-    /* MARGIN */
-    --rc-typography-margin-body: 1.25rem;
-
-    /* GAP */
-    --rc-gap-header: 1.5rem;
   }
   h2 {
     font-size: var(--rc-typography-h2);
   }
-  /*IMAGE*/
-
-  /*------------------------------------------------------------
-   COMPONENT
-   ------------------------------------------------------------*/
+  
   .info-historia {
-    border: 1px solid white;
+    border: 2px solid white;
   }
 
   .info-dias {
-    font-size:var(--rc-color-typography-note);
+    font-size: var(--rc-color-typography-note);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    margin: 2.5rem;
+    margin: 0.6rem;
     padding: 1rem;
     background-color: var(--rc-color-background-primary);
   }
-  
-  
 
-  /*------------------------------------------------------------
-   SECTION
-   ------------------------------------------------------------*/
-}
-.block {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0;
+
 }
 
-.block > img {
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  /* padding: 2rem; */
-}
 
 @media screen and (min-width: 75rem) {
-  /*VARIABLE*/
+/* Dispositivo PC */
   :root {
     /*TYPOGRAPHY*/
 
@@ -352,11 +252,7 @@ svg {
     --rc-typography-margin-heading: 1rem;
     --rc-typography-margin-body: 1.75rem;
 
-    /*LAYOUT*/
-    --rc-layout-grid: 4rem;
-    --rc-layout-gutter: 2rem;
-
-    /* GAP */
+      /* GAP */
     --rc-gap-header: 2rem;
     --rc-gap-customer: 4rem;
     --rc-gap-card: 2rem;
@@ -368,22 +264,14 @@ svg {
     font-size: var(--rc-typography-h4);
   }
 
-  /*LAYOUT*/
-  .rc-layout-container {
-    width: 70rem;
-  }
-
-  /*COMPONENT*/
-  .block {
+   .block {
     display: flex;
     flex-direction: row;
-    margin-bottom: 0;
+    column-gap: normal;
+    margin-bottom: 24px;
+    border: 2px solid white;
+    text-align: justify;
+    padding: 2rem;
   }
 
-  .block > img {
-    display: block;
-    width: 40%;
-    margin: 0 auto;
-  }
-  /*SECTION*/
 }
