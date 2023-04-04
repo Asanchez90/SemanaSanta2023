@@ -17,9 +17,15 @@ mas info: http://algeciraspasoapaso.blogspot.com/2011/11/venerable-y-sacramental
 
 - [✔]  Se han aplicado estilos globales para añadir `box-sizing: border-box;` y eliminar el padding y margin del `body`.
 - [✔]  El posicionamiento de los elementos se ha realizado por medio de `flex`. En su defecto, se habrá podido usar `grid` para esto.
-- [ ]  La web cuenta con `media queries` para hacerla responsive, de forma que se ve el contenido correctamente en móvil `menor de 375px` y en “escritorio” `mayor que mobile`.
-    - [ ]  Punto adicional si haces la web adecuada para tablet, entre los rangos de `375px y 768px`.
-- [ ]  Existen **variables de CSS** para los colores y tamaños más utilizados.
+- [✔]  La web cuenta con `media queries` para hacerla responsive, de forma que se ve el contenido correctamente en móvil `menor de 375px` y en “escritorio” `mayor que mobile`.
+    - [✔]  Punto adicional si haces la web adecuada para tablet, entre los rangos de `375px y 768px`.
+- [✔]  Existen **variables de CSS** para los colores y tamaños más utilizados.
 - [✔]  Se ha configurado el texto para definir estilos generales para los `h1, h2, h3, p, span`.
-    - [✔]  Punto adicional si ha cargado fuentes de [Google Fonts](https://fonts.google.com/).
+    - []  Punto adicional si ha cargado fuentes de [Google Fonts](https://fonts.google.com/).
     - revisar ultimo punto
+
+
+Opciones de mejoras:
+-Poner en el footer  una preview de un video de youtube ```https://www.youtube.com/watch?v=EBw6DuIPwkA```
+de un minuto.
+- intentar darle una vuelta al diseño para mejorarlo.

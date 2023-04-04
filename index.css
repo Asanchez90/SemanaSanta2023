@@ -176,6 +176,20 @@ svg {
   padding: 10px;
   border: 2px solid white;
 }
+.footer-rrss{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+.list-rrss{
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: none;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom:2rem ;
+}
 
 /* dispositivos */
 /* moviles */
@@ -203,6 +217,7 @@ svg {
   img {
     max-width: 80%;
   }
+
 }
 
 /* Dispositivo tablet */
@@ -274,5 +289,6 @@ svg {
     text-align: justify;
     padding: 2rem;
   }
+ 
 
 }
